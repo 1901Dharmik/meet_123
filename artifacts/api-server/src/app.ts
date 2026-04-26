@@ -57,6 +57,9 @@ app.use(
 );
 
 app.use("/api", maintenanceMiddleware);
+app.use("/api/health/new", (req,res)=>{
+  res.send("Service Hub Finder API")
+});
 app.use("/api", router);
 
 export default app;
