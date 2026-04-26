@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { eq } from "drizzle-orm";
+import { eq } from "drizzle-orm";   
 import { db, usersTable, providersTable } from "@workspace/db";
 import { hashPassword, comparePassword, createWalletForUser } from "../lib/auth";
 
