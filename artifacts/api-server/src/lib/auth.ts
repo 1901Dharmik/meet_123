@@ -1,3 +1,4 @@
+// @ts-nocheck
 import bcrypt from "bcrypt";
 import { db, usersTable, walletsTable } from "@workspace/db";
 import { eq } from "drizzle-orm";

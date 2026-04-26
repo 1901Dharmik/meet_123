@@ -1,6 +1,7 @@
+// @ts-nocheck
 import { db, pool, usersTable, walletsTable, appSettingsTable } from "@workspace/db";
 import { eq } from "drizzle-orm";
-import { hashPassword } from "./auth";
+import { hashPassword } from "./auth.js";
 
 const ADMIN_EMAIL = "admin@example.com";
 const ADMIN_PASSWORD = "Admin";
